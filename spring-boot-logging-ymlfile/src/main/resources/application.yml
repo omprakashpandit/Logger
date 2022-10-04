@@ -1,0 +1,19 @@
+spring:
+ application:
+  name: spring-boot-loggint
+ output:
+    ansi :
+      enabled :
+          detect 
+   
+
+#FILE CONFIG
+logging:
+  file:
+    name: F:/MyApp.log
+    max-size: 1 MB
+    max-history: 30
+    clean-history-on-start: true 
+  logback:
+    rollingpolicy:
+      file-name-pattern:  F:/MyApp-%d{yyyy-MM-dd}.%i.log
