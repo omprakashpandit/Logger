@@ -1,0 +1,19 @@
+spring:
+ application:
+  name: spring-boot-loggint
+ output:
+    ansi :
+      enabled :
+          detect 
+   
+
+#FILE CONFIG
+logging:
+  file:
+    name: ${user.home}/ZAP/MyApp.log
+    max-size: 1 KB
+    max-history: 30
+    clean-history-on-start: true 
+  logback:
+    rollingpolicy:
+      file-name-pattern:  ${user.home}/ZAP/%d{dd-MM-yyyy}/MyApp-%d{dd.MM.yyyy}.%i.log
